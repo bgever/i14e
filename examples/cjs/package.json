@@ -5,7 +5,7 @@
   "description": "Example use of i14e with CommonJS",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm uninstall i14e && cd ../.. && npm run pack && cd examples/cjs && npm i -D ../../i14e-0.1.0.tgz",
+    "preinstall": "npm uninstall i14e && cd ../.. && npm run pack && cd examples/cjs && npm i -D ../../i14e-1.0.0-alpha.1.tgz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ."
   },
@@ -14,6 +14,6 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "i14e": "file:../../i14e-0.1.0.tgz"
+    "i14e": "file:../../i14e-1.0.0-alpha.1.tgz"
   }
 }

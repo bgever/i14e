@@ -1,6 +1,6 @@
 {
   "name": "i14e",
-  "version": "0.1.0",
+  "version": "1.0.0-alpha.1",
   "description": "Internationalization (i18n) for your JavaScript code with internationalize (i14e)",
   "scripts": {
     "prebuild": "rimraf lib/*",
