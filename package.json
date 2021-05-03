@@ -1,0 +1,42 @@
+{
+  "name": "i14e",
+  "version": "0.1.0",
+  "description": "Internationalization (i18n) for your JavaScript code with internationalize (i14e)",
+  "scripts": {
+    "prebuild": "rimraf lib/*",
+    "build": "tsc -p tsconfig-cjs.json && rollup -c",
+    "prepack": "npm run build && rimraf i14e*",
+    "pack": "npm pack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.46.0",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "files": [
+    "lib/"
+  ],
+  "main": "lib/cjs/index.js",
+  "types": "lib/cjs/index.d.ts",
+  "exports": {
+    "import": "./lib/esm/index.mjs",
+    "require": "./lib/cjs/index.js"
+  },
+  "author": "Bart Verkoeijen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bgever/i14e/issues"
+  },
+  "homepage": "https://github.com/bgever/i14e#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgever/i14e.git"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization"
+  ]
+}

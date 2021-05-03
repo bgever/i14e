@@ -1,0 +1,8 @@
+node_modules/
+
+# Library build output.
+lib/
+
+# Package pack for examples and testing.
+package/
+i14e-*.tgz
